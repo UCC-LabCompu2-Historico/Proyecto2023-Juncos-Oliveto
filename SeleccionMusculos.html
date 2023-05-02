@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Entrenando(me)</title>
-  <meta content="Bautista Juncos y Sofia Oliveto" name="author">
-  <meta content="Proyecto para Laboratorio de Computacion II" name="description">
-  <meta content="entrenamiento, rutina, salud, músculos" name="keywords">
+  <meta name="author" content="Bautista Juncos y Sofia Oliveto" >
+  <meta name="description" content="Proyecto para Laboratorio de Computacion II" >
+  <meta name="keywords" content="entrenamiento, rutina, salud, músculos" >
+
+  <link rel="shorcut icon" href="Recursos\Logo.png">
+
 </head>
 
 <body>
@@ -23,12 +26,16 @@
 </nav>
 
 <main>
+
+  <div id="instruccion5musculos">
   <h1>Agrege hasta 5 músculos a su rutina!</h1>
-  
+  </div>
+
   <img src="Recursos/CuerpoAdelante.png" width="500">
   <img src="Recursos/CuerpoAtras.png" width="500">
 
-  <form action="SobreNosotros.html">
+  <div id="formulariomusculos">
+  <form action="Rutina.html">
     <h3>Miembro superior:</h3>
       <input type="checkbox" name="pectorales" value="pectorales" id="pectorales">
       <label for="pectorales">Pectorales</label>
@@ -69,11 +76,18 @@
       <label for="pantorrillas">Pantorrillas</label>
     </p>
     <p>
-      <button type="submit">Crear rutina</button>
+      <button name="createroutine" type="submit">Crear rutina</button>
+      <button name="borrar" type="reset">Resetear valores</button>
     </p>
   </form>
-
+  </div>
 
 </main>
+
+<footer>
+  Creado por estudiantes de la Facultad de Ingeniería de la Universidad Católica de Córdoba
+</footer>
+
 </body>
+
 </html>

@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Entrenando(me)</title>
-    <meta content="Bautista Juncos y Sofia Oliveto" name="author">
-    <meta content="Proyecto para Laboratorio de Computacion II" name="description">
-    <meta content="entrenamiento, rutina, salud, calorias" name="keywords">
+    <meta name="author" content="Bautista Juncos y Sofia Oliveto" >
+    <meta name="description" content="Proyecto para Laboratorio de Computacion II" >
+    <meta name="keywords" content="entrenamiento, rutina, salud, calorias" >
+
+    <link rel="shorcut icon" href="Recursos\Logo.png">
+
 </head>
 <body>
 <header>
@@ -21,9 +24,13 @@
 </nav>
 
 <main>
+
+    <div id="introindex">
     <h1>¡Crea tu propio entrenamiento!</h1>
     <h4>En nuestra página te crearemos una rutina de entrenamiento siempre haciendo caso de tus necesidades y capacidades.</h4>
+    </div>
 
+    <div id="formulariousuario">
     <form action="SeleccionMusculos.html">
     <p>
         <label for="nombre">Nombre:</label>
@@ -61,11 +68,20 @@
         </label>
     </p>
     <p>
-        <button type="submit">Siguiente </button>
+        <button name="senddata" type="submit">Siguiente </button>
+        <button name="borrar" type="reset">Resetear valores</button>
     </p>
     </form>
+    </div>
 
     <img src="Recursos/ImagenInicio.jpeg">
+
 </main>
+
+<footer>
+    Creado por estudiantes de la Facultad de Ingeniería de la Universidad Católica de Córdoba
+</footer>
+
 </body>
+
 </html>

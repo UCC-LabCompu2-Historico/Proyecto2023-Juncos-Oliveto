@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Entrenando(me)</title>
-  <meta content="Bautista Juncos y Sofia Oliveto" name="author">
-  <meta content="Proyecto para Laboratorio de Computacion II" name="description">
-  <meta content="calculadora, calorias, salud, comida" name="keywords">
+  <meta name="author" content="Bautista Juncos y Sofia Oliveto" >
+  <meta name="description" content="Proyecto para Laboratorio de Computacion II" >
+  <meta name="keywords" content="calculadora, calorias, salud, comida" >
+
+  <link rel="shorcut icon" href="Recursos\Logo.png">
+
 </head>
 
 <body>
@@ -22,10 +25,15 @@
 </nav>
 
 <main>
+
+  <div id="introcalculadora">
   <h1>Calculadora de calorías</h1>
   <h4>Aquí podremos calcular la cantidad de calorías que deberías consumir cotidianamente con tal de conseguir los resultados que esperas. ¡Pruebala!</h4>
+  </div>
+
   <img src="Recursos/Calculadora.png" width="300">
 
+  <div id="calculadora">
   <form>
   <p>
     <label for="sexo"> Sexo:
@@ -62,8 +70,9 @@
     <button type="submit">Calcular</button>
   </p>
   </form>
+  </div>
 
-  <h2>Resultado</h2>
+  <h2 id="resultadocalculadora">Resultado</h2>
 
   <img src="Recursos/Verduras.png" width="1500">
 </main>
