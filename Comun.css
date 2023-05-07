@@ -10,19 +10,21 @@ header{
 }
 
 #logo{
-    height: 65px;
+    height: 4em;
     float: left;
-    margin: 6px 6px 3px 20px;
+    margin: 1% 1% 1% 2%;
 }
 
 #menu{
-    display: flex;
     background-color: #79DD7E;
 }
 
-a {
-    display: inline-block;
-    margin: 5px 110px;
+nav {
+    display: flex;       /* Para tener los elementos horizontalmente */
+}
+
+a{
+    margin: 0.1% 8.5% 0.1% 8.5%;
     color: black;
 }
 
@@ -30,3 +32,18 @@ a:link{
     text-decoration: none;
 }
 
+button{
+    display: inline-flex;
+    font-size: 80%;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: black;
+    transition: background-color 0.3s linear;
+    color: white;
+    transition: color 0.3s linear;
+}

@@ -1,3 +1,42 @@
 #fotoindex{
-
+    width: 100%;
+    margin-bottom: -1cm;
 }
+
+#titulo{
+    text-shadow: 2px 2px black;
+    position: relative;
+    color: white;
+    margin: 3% 50% 3% 3%;
+    font-size: xxx-large;
+    line-height: 200%;
+}
+
+#introindex{
+    position: relative;
+    font-size: 150%;
+    line-height: 200%;
+    color: white;
+    margin: 3% 50% 6% 3%;
+}
+
+option{
+    font-size: 125%;
+}
+
+#formulariousuario{
+    font-size: 120%;
+    position: absolute;
+    font-weight: bold;
+    margin: 5% 3% 5% 60%;
+    padding: 2% 2% 2% 2%;
+    right: 4%;
+    top: 35%;
+    float: right;
+    background: #CAF729;
+    text-align: justify;
+    border-radius: 16%;
+}
+
+
+
