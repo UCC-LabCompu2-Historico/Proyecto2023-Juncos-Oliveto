@@ -1,91 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Entrenando(me)</title>
-  <meta name="author" content="Bautista Juncos y Sofia Oliveto" >
-  <meta name="description" content="Proyecto para Laboratorio de Computacion II" >
-  <meta name="keywords" content="entrenamiento, rutina, salud, músculos" >
+    <meta charset="UTF-8">
+    <title>Entrenando(me)</title>
+    <meta name="author" content="Bautista Juncos y Sofia Oliveto">
+    <meta name="description" content="Proyecto para Laboratorio de Computacion II">
+    <meta name="keywords" content="entrenamiento, rutina, salud, músculos">
 
-  <link rel="shorcut icon" href="Recursos\Logo.png">
+    <link rel="shorcut icon" href="Recursos/Logo.png">
 
 </head>
 
 <body>
 
 <header>
-  <h1>Entrenando(me)</h1>
-  <img src="Recursos/Logo.png" width="40">
+    <h1>Entrenando(me)</h1>
+    <img src="Recursos/Logo.png" width="40" alt="Logo músculo">
 </header>
 
 <nav class="menu">
-  <a href="index.html"><h4>Inicio</h4></a>
-  <a href="Calculadora.html"><h4>Calculadora de calorías</h4></a>
-  <a href="SobreNosotros.html"><h4>Sobre nosotros</h4></a>
-  <a href="Importancia.html"><h4>Importancia</h4></a>
+    <a href="index.html"><h4>Inicio</h4></a>
+    <a href="Calculadora.html"><h4>Calculadora de calorías</h4></a>
+    <a href="SobreNosotros.html"><h4>Sobre nosotros</h4></a>
+    <a href="Importancia.html"><h4>Importancia</h4></a>
 </nav>
 
 <main>
 
-  <div id="instruccion5musculos">
-  <h1>Agrege hasta 5 músculos a su rutina!</h1>
-  </div>
+    <div id="instruccion5musculos">
+        <h1>Agrege hasta 5 músculos a su rutina!</h1>
+    </div>
 
-  <img src="Recursos/CuerpoAdelante.png" width="500">
-  <img src="Recursos/CuerpoAtras.png" width="500">
+    <canvas id="cuerpoadelante" width="500">
+        Tu navegador no soporta el tag Canvas de HTML
+    </canvas>
+    <img src="Recursos/CuerpoAdelante.png" width="500" alt="Cuerpo visto de adelante con los músculos marcados">
+    <canvas id="cuerpoatrás" width="500">
+        Tu navegador no soporta el tag Canvas de HTML
+    </canvas>
+    <img src="Recursos/CuerpoAtras.png" width="500" alt="Cuerpo visto de atrás con los músculos marcados">
 
-  <div id="formulariomusculos">
-  <form action="Rutina.html">
-    <h3>Miembro superior:</h3>
-      <input type="checkbox" name="pectorales" value="pectorales" id="pectorales">
-      <label for="pectorales">Pectorales</label>
-    <p>
-      <input type="checkbox" name="triceps" value="pectorales" id="triceps">
-      <label for="triceps">Tríceps</label>
-    </p>
-    <p>
-      <input type="checkbox" name="hombros" value="hombros" id="hombros">
-      <label for="hombros">Hombros</label>
-    </p>
-    <p>
-      <input type="checkbox" name="espalda" value="espalda" id="espalda">
-      <label for="espalda">Espalda</label>
-    </p>
-    <p>
-      <input type="checkbox" name="biceps" value="biceps" id="biceps">
-      <label for="biceps">Bíceps</label>
-    </p>
-    <p>
-      <input type="checkbox" name="abdominales" value="abdominales" id="abdominales">
-      <label for="abdominales">Abdominales</label>
-    </p>
+    <div id="formulariomusculos">
+        <form action="Rutina.html">
+            <h3>Miembro superior:</h3>
+            <input type="checkbox" name="pectorales" value="pectorales" id="pectorales">
+            <label for="pectorales">Pectorales</label>
+            <p>
+                <input type="checkbox" name="triceps" value="pectorales" id="triceps">
+                <label for="triceps">Tríceps</label>
+            </p>
+            <p>
+                <input type="checkbox" name="hombros" value="hombros" id="hombros">
+                <label for="hombros">Hombros</label>
+            </p>
+            <p>
+                <input type="checkbox" name="espalda" value="espalda" id="espalda">
+                <label for="espalda">Espalda</label>
+            </p>
+            <p>
+                <input type="checkbox" name="biceps" value="biceps" id="biceps">
+                <label for="biceps">Bíceps</label>
+            </p>
+            <p>
+                <input type="checkbox" name="abdominales" value="abdominales" id="abdominales">
+                <label for="abdominales">Abdominales</label>
+            </p>
 
-  <h3>Miembro inferior:</h3>
-      <input type="checkbox" name="cuadriceps" value="cuadriceps" id="cuadriceps">
-      <label for="cuadriceps">Cuádriceps</label>
-    <p>
-      <input type="checkbox" name="isquios" value="isquios" id="isquios">
-      <label for="isquios">Isquiotibiales</label>
-    </p>
-    <p>
-      <input type="checkbox" name="gluteos" value="gluteos" id="gluteos">
-      <label for="gluteos">Glúteos</label>
-    </p>
-    <p>
-      <input type="checkbox" name="pantorrillas" value="pantorrillas" id="pantorrillas">
-      <label for="pantorrillas">Pantorrillas</label>
-    </p>
-    <p>
-      <button name="createroutine" type="submit">Crear rutina</button>
-      <button name="borrar" type="reset">Resetear valores</button>
-    </p>
-  </form>
-  </div>
+            <h3>Miembro inferior:</h3>
+            <input type="checkbox" name="cuadriceps" value="cuadriceps" id="cuadriceps">
+            <label for="cuadriceps">Cuádriceps</label>
+            <p>
+                <input type="checkbox" name="isquios" value="isquios" id="isquios">
+                <label for="isquios">Isquiotibiales</label>
+            </p>
+            <p>
+                <input type="checkbox" name="gluteos" value="gluteos" id="gluteos">
+                <label for="gluteos">Glúteos</label>
+            </p>
+            <p>
+                <input type="checkbox" name="pantorrillas" value="pantorrillas" id="pantorrillas">
+                <label for="pantorrillas">Pantorrillas</label>
+            </p>
+            <p>
+                <button name="createroutine" type="submit">Crear rutina</button>
+                <button name="borrar" type="reset">Resetear valores</button>
+            </p>
+        </form>
+    </div>
 
 </main>
 
 <footer>
-  Creado por estudiantes de la Facultad de Ingeniería de la Universidad Católica de Córdoba
+    Creado por estudiantes de la Facultad de Ingeniería de la Universidad Católica de Córdoba
 </footer>
 
 </body>
