@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,11 @@
     <meta name="author" content="Bautista Juncos y Sofia Oliveto">
     <meta name="description" content="Proyecto para Laboratorio de Computacion II">
     <meta name="keywords" content="importancia del ejercicio, salud, beneficios de entrenar, en que ayuda entrenar">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Comun.css" type="text/css">
+    <link rel="stylesheet" href="Importancia.css" type="text/css">
     <link rel="shorcut icon" href="Recursos/Logo.png">
 
 </head>
@@ -15,65 +19,61 @@
 <body>
 
 <header>
-    <h2>Entrenando(me)</h2>
-    <img src="Recursos/Logo.png" width="40" alt="Logo músculo">
+    <img src="Recursos/Logo.png" alt="Logo músculo" id="logo">
+    <h1>ENTRENANDO(ME)</h1>
 </header>
 
-<nav class="menu">
+<nav id="menu">
     <a href="index.html"><h4>Inicio</h4></a>
     <a href="Calculadora.html"><h4>Calculadora de calorías</h4></a>
     <a href="SobreNosotros.html"><h4>Sobre nosotros</h4></a>
     <a href="Importancia.html"><h4>Importancia</h4></a>
 </nav>
 
-<article id="importancia">
-
+<div id="titulo">
     <h1>Las grandes ventajas de hacer ejercicio</h1>
+    <h3>¿Todavia no estás convencido de empezar?
+        Te mostramos cinco razones por las cuales no deberías esperar hasta el lunes para comenzar tu cambio.
+    </h3>
+</div>
 
-    <h4>¿Todavia no estas convencido de empezar?
-        Te mostramos cinco razones por las cuales no debes esperar hasta el lunes para comenzar un cambio.
-    </h4>
-
-    <img src="Recursos/importancia.png" width=350px alt="Persona corriendo">
-
-    <ol>
-        <li>Hacer ejercicio te ayuda a controlar el peso
-        <p>
+<ol>
+    <li>
+        Hacer ejercicio te ayuda a controlar el peso
+        <p class="texto">
             El ejercicio puede ayudar a prevenir el aumento de peso excesivo o ayudar a mantener la pérdida de peso.
             Cuando realizas actividad física, quemas calorías y creas músculo. Mientras más intensa sea la actividad y
             mas músculo tengas, más calorías quemarás.
         </p>
-        </li>
-        <li>El ejercicio combate las afecciones y las enfermedades
-        <p>
+    </li>
+    <li>El ejercicio combate las afecciones y las enfermedades
+        <p class="texto">
             Sin importar cuál sea tu peso actual, estar activo aumenta el colesterol con lipoproteína de alta densidad
             (HDL) o el colesterol "bueno" y reduce los triglicéridos poco saludables. Esta fórmula instantánea hace que
             tu sangre fluya normalmente, lo cual reduce tu riesgo de sufrir enfermedades cardiovasculares.
         </p>
-        </li>
-        <li>El ejercicio mejora el estado de ánimo
-        <p>
+    </li>
+    <li>El ejercicio mejora el estado de ánimo
+        <p class="texto">
             ¿Necesitas un estímulo emocional? ¿O necesitas relajarte después de un día estresante? Una sesión de
             gimnasia o una caminata rápida pueden ayudar. La actividad física estimula varias sustancias químicas
             cerebrales que pueden hacer que te sientas más feliz, más relajado y menos ansioso
         </p>
-        </li>
-        <li>Hacer ejercicio promueve un mejor sueño
-        <p>
+    </li>
+    <li>Hacer ejercicio promueve un mejor sueño
+        <p class="texto">
             ¿Te cuesta dormir? La actividad física regular puede ayudarte a quedarte dormido más rápido, a dormir mejor
             y más profundamente.
         </p>
-        </li>
-        <li>El ejercicio puede ser divertido y una actividad social
-        <p>
+    </li>
+    <li>El ejercicio puede ser divertido y una actividad social
+        <p class="texto">
             El ejercicio y la actividad física pueden ser agradables. Te dan la oportunidad de relajarte, disfrutar del
             aire libre o simplemente participar en actividades que te hacen feliz. Ademas es muy probable que conozcas
             nuevas personas y hagas amigos nuevos.
         </p>
-        </li>
-    </ol>
-
-</article>
+    </li>
+</ol>
 
 </body>
 </html>

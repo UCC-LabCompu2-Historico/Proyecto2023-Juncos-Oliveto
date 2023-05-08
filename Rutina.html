@@ -7,19 +7,22 @@
     <meta name="author" content="Bautista Juncos y Sofia Oliveto" >
     <meta name="description" content="Proyecto para Laboratorio de Computacion II" >
     <meta name="keywords" content="entrenamiento, rutina, salud, músculos, ejercicios" >
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Comun.css" type="text/css">
+    <link rel="stylesheet" href="Rutina.css" type="text/css">
     <link rel="shorcut icon" href="Recursos/Logo.png">
-
 </head>
 
 <body>
 
 <header>
-    <h1>Entrenando(me)</h1>
-    <img src="Recursos/Logo.png" width="40" alt="Logo múscculo">
+    <img src="Recursos/Logo.png" alt="Logo músculo" id="logo">
+    <h1>ENTRENANDO(ME)</h1>
 </header>
 
-<nav class="menu">
+<nav id="menu">
     <a href="index.html"><h4>Inicio</h4></a>
     <a href="Calculadora.html"><h4>Calculadora de calorías</h4></a>
     <a href="SobreNosotros.html"><h4>Sobre nosotros</h4></a>
@@ -28,47 +31,44 @@
 
 <main>
 
-    <div id="rutinaparausuario"><h2>Rutina para :</h2></div>
+    <div><h2>Rutina para Juan Bautista:</h2></div>
 
-    <p>
-        Press plano
-       4 series x8 repeticiones
+    <div id="rutina">
+        <div class="ejercicio">
+            <p>
+            Press plano<br>
+            4 series x8 repeticiones
+            </p>
+            <img src="Recursos/PressPlano.png" alt="Ejercicio press plano" class="imagenenjercicio">
+        </div>
 
-        <img src="Recursos/PressPlano.png" width=370px alt="Ejercicio press plano">
-    </p>
+        <div class="ejercicio">
+        <p>
+            Peck deck <br>
+            4 series x12 repeticiones
+        </p>
+            <img src="Recursos/PeckDeck.png" alt="Ejercicio peck deck" class="imagenenjercicio">
+        </div>
 
-    <p>
-        Peck deck
-        4 series x12 repeticiones
+        <div class="ejercicio">
+        <p>
+            Press militar <br>
+            4 series x10 repeticiones
+        </p>
+            <img src="Recursos/PressMilitar.png" alt="Ejercicio press militar" class="imagenenjercicio">
+        </div>
 
-        <img src="Recursos/PeckDeck.png" width=370px alt="Ejercicio peck deck">
-    </p>
-
-    <p>
-        Press militar
-        4 series x10 repeticiones
-
-        <img src="Recursos/PressMilitar.png" width=370px alt="Ejercicio press militar">
-    </p>
-
-    <p>
-        Extensión de tríceps en polea
-        4 series x12 repeticiones
-
-
-        <img src="Recursos/ExtensionTricepsPolea.png" width=370px alt="Ejercicio extensión de triceps">
-    </p>
-
+        <div class="ejercicio">
+        <p>
+            Extensión de tríceps en polea <br>
+            4 series x12 repeticiones
+        </p>
+            <img src="Recursos/ExtensionTricepsPolea.png" alt="Ejercicio extensión de triceps" class="imagenenjercicio">
+        </div>
+    </div>
+    <button name="soyotrapersona" type="button" onclick="location.href='index.html'">Soy otra persona</button>
+    <button name="nuevarutina" type="button" onclick="location.href='SeleccionMusculos.html'">+ Nueva rutina</button>
 </main>
-
-<footer>
-    Creado por estudiantes de la Facultad de Ingeniería de la Universidad Católica de Córdoba
-</footer>
-
-<nav class="biredireccion">
-    <a href="index.html"><h4>Soy otra persona</h4></a>
-    <a href="SeleccionMusculos.html"><h4> + Nueva rutina</h4></a>
-</nav>
 
 </body>
 

@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Entrenando(me)</title>
     <meta name="author" content="Bautista Juncos y Sofia Oliveto">
     <meta name="description" content="Proyecto para Laboratorio de Computacion II">
     <meta name="keywords" content="entrenamiento, rutina, salud, músculos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Comun.css" type="text/css">
+    <link rel="stylesheet" href="SeleccionMusculos.css" type="text/css">
 
     <link rel="shorcut icon" href="Recursos/Logo.png">
 
@@ -14,11 +19,11 @@
 <body>
 
 <header>
-    <h1>Entrenando(me)</h1>
-    <img src="Recursos/Logo.png" width="40" alt="Logo músculo">
+    <img src="Recursos/Logo.png" alt="Logo músculo" id="logo">
+    <h1>ENTRENANDO(ME)</h1>
 </header>
 
-<nav class="menu">
+<nav id="menu">
     <a href="index.html"><h4>Inicio</h4></a>
     <a href="Calculadora.html"><h4>Calculadora de calorías</h4></a>
     <a href="SobreNosotros.html"><h4>Sobre nosotros</h4></a>
@@ -26,19 +31,18 @@
 </nav>
 
 <main>
-
-    <div id="instruccion5musculos">
-        <h1>Agrege hasta 5 músculos a su rutina!</h1>
+    <div id="agregarmusculos">
+        <h1>¡Agregue hasta 5 músculos a su rutina!</h1>
+        <canvas id="cuerpoadelante">
+            Tu navegador no soporta el tag Canvas de HTML
+        </canvas>
+        <canvas id="cuerpoatras">
+            Tu navegador no soporta el tag Canvas de HTML
+        </canvas>
+        <br>
+        <img src="Recursos/CuerpoAdelante.png" alt="Cuerpo visto de adelante con los músculos marcados" class="cuerpo">
+        <img src="Recursos/CuerpoAtras.png" alt="Cuerpo visto de atrás con los músculos marcados" class="cuerpo">
     </div>
-
-    <canvas id="cuerpoadelante" width="500">
-        Tu navegador no soporta el tag Canvas de HTML
-    </canvas>
-    <img src="Recursos/CuerpoAdelante.png" width="500" alt="Cuerpo visto de adelante con los músculos marcados">
-    <canvas id="cuerpoatrás" width="500">
-        Tu navegador no soporta el tag Canvas de HTML
-    </canvas>
-    <img src="Recursos/CuerpoAtras.png" width="500" alt="Cuerpo visto de atrás con los músculos marcados">
 
     <div id="formulariomusculos">
         <form action="Rutina.html">
@@ -81,19 +85,16 @@
                 <input type="checkbox" name="pantorrillas" value="pantorrillas" id="pantorrillas">
                 <label for="pantorrillas">Pantorrillas</label>
             </p>
+            <br>
             <p>
-                <button name="createroutine" type="submit">Crear rutina</button>
+                <button name="crearrutina" type="submit">Crear rutina</button>
                 <button name="borrar" type="reset">Resetear valores</button>
             </p>
         </form>
     </div>
 
+
 </main>
-
-<footer>
-    Creado por estudiantes de la Facultad de Ingeniería de la Universidad Católica de Córdoba
-</footer>
-
 </body>
 
 </html>
