@@ -15,7 +15,7 @@ div h1 {
 
 #formulariomusculos {
     margin: 5% 1% 5% 12%;
-    padding: 1.5% 1.5% 1.5% 1.5%;
+    padding: 1.5%;
     position: absolute;
     right: 10%;
     top: 30%;
@@ -33,6 +33,11 @@ canvas {
 
 .cuerpo {
     width: 420px;
+}
+
+button {
+    padding: 5%;
+    margin: 2%;
 }
 
 

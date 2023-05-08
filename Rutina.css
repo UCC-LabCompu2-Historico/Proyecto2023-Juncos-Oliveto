@@ -1,9 +1,9 @@
-div h2{
+div h2 {
     text-shadow: 2px 2px black;
     font-size: xx-large;
     color: white;
-    margin: 5% 5% 5% 5%;
-    padding: 5% 5% 5% 5%;
+    margin: 5% 5% 2% 5%;
+    padding: 5%;
     position: relative;
     left: auto;
     background: #2ECBAA;
@@ -11,26 +11,76 @@ div h2{
     text-align: center;
 }
 
-body{
+body {
     background: white;
 }
 
-p{
-    color: red;
+p {
+    color: black;
 }
 
-.ejercicio{
+#ejercicio1 {
     background: #21B6B6;
+    position: relative;
+    float: left;
+    padding: 2% 2% 2% 5%;
+    margin: 2% 2% 1% 5%;
+    width: 36%;
+    border-radius: 10px;
+    opacity: .8;
 }
 
-.imagenenjercicio{
+#ejercicio2 {
+    background: #79DD7E;
+    position: relative;
+    float: right;
+    padding: 2% 2% 2% 5%;
+    margin: 2% 5% 1% 2%;
+    width: 36%;
+    border-radius: 10px;
+    opacity: .8;
+}
+
+#ejercicio3 {
+    background: #2ECBAA;
+    position: relative;
+    float: left;
+    padding: 2% 2% 2% 5%;
+    margin: 2% 2% 1% 5%;
+    width: 36%;
+    border-radius: 10px;
+    opacity: .8;
+}
+
+#ejercicio4 {
+    background: #CAF729;
+    position: relative;
+    float: right;
+    padding: 2% 2% 2% 5%;
+    margin: 2% 5% 1% 2%;
+    width: 36%;
+    border-radius: 10px;
+    opacity: .8;
+}
+
+.imagenenjercicio {
     width: 50%;
     position: relative;
     left: auto;
 }
 
-#rutina{
-    column-count: 2;
-    column-gap: 50px;
-    margin: 0 5% 0 5%;
+button {
+    padding: 1% 4% 1% 4%;
+    font-size: 90%;
+    text-align: center;
 }
+
+.nombreejercicio {
+    font-weight: bold;
+}
+
+#primerboton {
+    position: relative;
+    margin: 2% 2% 2% -16%;
+}
+
