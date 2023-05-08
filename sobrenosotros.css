@@ -1,0 +1,51 @@
+#sobrenosotros{
+    color: white;
+    font-size: xxx-large;
+    font-weight: bold;
+    margin: 3% 0 0 3%;
+
+}
+
+#catolica{
+    background-color: white;
+    padding: 2%;
+    border-radius: 20px;
+    position: relative;
+    float: right;
+    margin: 1% 7% 1% 50%;
+}
+
+#ingenieria{
+    background-color: white;
+    padding: 2%;
+    border-radius: 20px;
+    position: relative;
+    margin: 1% 7% 3% 50%;
+    float: right;
+}
+
+#intronosotros{
+    position: absolute;
+    font-size: large;
+    color: white;
+    font-weight: normal;
+    margin: 3% 40% 0 3%;
+}
+
+#contactos{
+    color: white;
+    font-size: large;
+    margin: 15% 40% 2% 3%;
+}
+
+#redes{
+    margin: 0 4% 0;
+}
+
+#instagrams{
+    display: flex;
+}
+
+#instagram{
+    width: 25%;
+}

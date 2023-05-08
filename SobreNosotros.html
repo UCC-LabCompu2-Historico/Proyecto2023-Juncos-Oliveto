@@ -9,27 +9,37 @@
 
     <link rel="shorcut icon" href="Recursos/Logo.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Comun.css" type="text/css">
+
+    <link rel="stylesheet" href="sobrenosotros.css" type="text/css">
+
 </head>
 <body>
 
 <header>
-    <h2>Entrenando(me)</h2>
-    <img src="Recursos/Logo.png" width="40" alt="Logo músculo">
+    <img id="logo" src="Recursos/Logo.png" alt="Logo músculo">
+    <h1>ENTRENANDO(ME)</h1>
 </header>
 
-<nav class="menu">
+<nav id="menu">
     <a href="index.html"><h4>Inicio</h4></a>
     <a href="Calculadora.html"><h4>Calculadora de calorías</h4></a>
     <a href="SobreNosotros.html"><h4>Sobre nosotros</h4></a>
     <a href="Importancia.html"><h4>Importancia</h4></a>
 </nav>
 
-<article id="sobrenosotros">
 
-    <h1>Sobre Nosotros . . . </h1>
+    <h1 id="sobrenosotros">Sobre Nosotros . . . </h1>
 
-    <img src="Recursos/uccLOGO.png" width=320px alt="Logo de la Universidad Católica de Córdoba">
-    <img src="Recursos/facIngLOGO.ucc.png" width=320px alt="Logo de la Facultad de Ingeniería de la UCC">
+<div id="imagenes">
+    <img id="catolica" src="Recursos/uccLOGO.png" width=320px alt="Logo de la Universidad Católica de Córdoba">
+    <img id="ingenieria" src="Recursos/facIngLOGO.ucc.png" width=320px alt="Logo de la Facultad de Ingeniería de la UCC">
+</div>
+    <div id="intronosotros">
     <p>
         Solo para que nos conozcamos un poco mejor, somos Bauti y Sofi,
         ambos estudiantes de Ingeniería en Sistemas en la Universidad
@@ -39,22 +49,20 @@
         conocer un poco más sobre cómo fue el proceso de creación de
         nuestro sitio web solo tenés que mandarnos mensaje vía Instagram!
     </p>
-</article>
+    </div>
 
-<section id="contactos">
-    <p>
+<div id="contactos">
     <h3>¡Apoyanos en nuestras redes sociales!</h3>
-    <p>
+    <div id="instagrams">
+    <img id="instagram" src="Recursos/logoInstagram.png" alt="Logo de Instagram">
+    <p id="redes">
         @baujuncos
         @sofiioliveto
     </p>
-    <img id="instagram" src="Recursos/logoInstagram.png" width=40px alt="Logo de Instagram">
-    </p>
-</section>
+    </div>
+</div>
 
-<footer>
-    Creado por estudiantes de la Facultad de Ingeniería de la Universidad Católica de Córdoba
-</footer>
+
 
 </body>
 
