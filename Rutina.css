@@ -1,0 +1,36 @@
+div h2{
+    text-shadow: 2px 2px black;
+    font-size: xx-large;
+    color: white;
+    margin: 5% 5% 5% 5%;
+    padding: 5% 5% 5% 5%;
+    position: relative;
+    left: auto;
+    background: #2ECBAA;
+    border-radius: 30px;
+    text-align: center;
+}
+
+body{
+    background: white;
+}
+
+p{
+    color: red;
+}
+
+.ejercicio{
+    background: #21B6B6;
+}
+
+.imagenenjercicio{
+    width: 50%;
+    position: relative;
+    left: auto;
+}
+
+#rutina{
+    column-count: 2;
+    column-gap: 50px;
+    margin: 0 5% 0 5%;
+}

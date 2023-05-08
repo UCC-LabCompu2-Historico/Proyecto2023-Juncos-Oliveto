@@ -1,0 +1,38 @@
+div h1 {
+    text-shadow: 2px 2px black;
+    font-size: xxx-large;
+}
+
+#titulo {
+    color: white;
+    text-align: justify;
+    margin: 1% 1% 1% 1%;
+    padding: 3% 5% 3% 5%;
+    position: relative;
+    left: auto;
+    background: #2ECBAA;
+}
+
+ol {
+    text-align: justify;
+    padding: 3% 5% 3% 5%;
+    margin: 0;
+    position: relative;
+    left: auto;
+    background: white;
+}
+
+li {
+    color: #CAF729;
+    font-size: large;
+    font-weight: bold;
+}
+
+.texto {
+    color: black;
+    font-weight: normal;
+}
+
+body {
+    background: white;
+}

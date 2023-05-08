@@ -1,0 +1,38 @@
+#agregarmusculos {
+    padding: 1% 5% 3% 5%;
+    text-align: center;
+    position: relative;
+    left: auto;
+    float: left;
+    background: #2ECBAA;
+}
+
+div h1 {
+    text-shadow: 2px 2px black;
+    color: white;
+    font-size: xxx-large;
+}
+
+#formulariomusculos {
+    margin: 5% 1% 5% 12%;
+    padding: 1.5% 1.5% 1.5% 1.5%;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    float: right;
+    background: #CAF729;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+canvas {
+    border: 2px solid #ffffff;
+    width: 420px;
+
+}
+
+.cuerpo {
+    width: 420px;
+}
+
+
