@@ -1,49 +1,52 @@
-body{
+body {
     font-family: 'Exo 2', sans-serif;
-    margin:0;
+    margin: 0;
     background-color: #2ECBAA;
 }
 
-header{
+header {
     display: flex;
     background-color: #CAF729;
 }
 
-#logo{
+#logo {
     height: 4em;
     float: left;
     margin: 1% 1% 1% 2%;
 }
 
-#menu{
+#menu {
     background-color: #79DD7E;
 }
 
 nav {
-    display: flex;       /* Para tener los elementos horizontalmente */
+    display: flex; /* Para tener los elementos horizontalmente */
 }
 
-a{
+a {
     margin: 0.1% 8.5% 0.1% 8.5%;
     color: black;
 }
 
-a:link{
+a:link {
     text-decoration: none;
 }
 
-button{
+button {
     display: inline-flex;
     font-size: 80%;
     font-family: 'Exo 2', sans-serif;
     font-weight: bold;
-    padding: 2%;
+    padding: 3%;
     border-radius: 20px;
 }
 
-button:hover{
+button:hover {
     background-color: black;
     transition: background-color 0.3s linear;
+}
+
+button:hover {
     color: white;
     transition: color 0.3s linear;
 }

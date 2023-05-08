@@ -9,15 +9,23 @@
 
     <link rel="shorcut icon" href="Recursos/Logo.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Comun.css" type="text/css">
+
+    <link rel="stylesheet" href="calculadora.css" type="text/css">
+
 </head>
 
 <body>
 <header>
-    <h1>Entrenando(me)</h1>
-    <img src="Recursos/Logo.png" width="40" alt="Logo músculo">
+    <img id="logo" src="Recursos/Logo.png" alt="Logo músculo">
+    <h1>ENTRENANDO(ME)</h1>
 </header>
 
-<nav class="menu">
+<nav id="menu">
     <a href="index.html"><h4>Inicio</h4></a>
     <a href="Calculadora.html"><h4>Calculadora de calorías</h4></a>
     <a href="SobreNosotros.html"><h4>Sobre nosotros</h4></a>
@@ -26,56 +34,67 @@
 
 <main>
 
-    <div id="introcalculadora">
+    <div class="introcalculadora">
+
         <h1>Calculadora de calorías</h1>
+
         <h4>Aquí podremos calcular la cantidad de calorías que deberías consumir cotidianamente con tal de conseguir los
             resultados que esperas. ¡Pruebala!</h4>
+
     </div>
 
-    <img src="Recursos/Calculadora.png" width="300" alt="Calculadora con una manzana">
+    <img id="calcmanzana" src="Recursos/Calculadora.png" alt="Calculadora con una manzana">
 
-    <div id="calculadora">
-        <form>
-            <p>
-                <label for="sexo"> Sexo:
-                    <select name="sexo" id="sexo">
-                        <option value="femenino">Femenino</option>
-                        <option value="masculino">Masculino</option>
-                    </select>
-                </label>
-            </p>
-            <p>
-                <label for="altura">Altura:</label>
-                <input type="number" name="altura" placeholder="Ingrese su altura en cm" id="altura">
-            </p>
-            <p>
-                <label for="peso">Peso:</label>
-                <input type="number" name="peso" placeholder="Ingrese su peso en kg" id="peso">
-            </p>
-            <p>
-                <label for="edad">Altura:</label>
-                <input type="number" name="edad" placeholder="Ingrese su edad" id="edad">
-            </p>
-            <p>
-                <label for="frecuencia">Objetivo:
-                    <select name="frecuencia" id="frecuencia">
-                        <option value="nada">Nada o muy poco</option>
-                        <option value="ligero">Ejercicio ligero (1 a 3 días por semana)</option>
-                        <option value="moderado">Ejercicio moderado (3 a 5 días por semana)</option>
-                        <option value="fuerte">Ejercicio fuerte (6 a 7 días por semana)</option>
-                        <option value="muyfuerte">Ejercicio muy fuerte (dos veces al dia por semana)</option>
-                    </select>
-                </label>
-            </p>
-            <p>
-                <button type="submit">Calcular</button>
-            </p>
-        </form>
+    <div class="img">
+
+        <img id="verduras" src="Recursos/Verduras.png" alt="Frutas y verduras">
+
+        <div class="formcalculadora">
+
+            <form>
+                <p>
+                    <label for="sexo"> Sexo:
+                        <select name="sexo" id="sexo">
+                            <option value="femenino">Femenino</option>
+                            <option value="masculino">Masculino</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label for="altura">Altura:</label>
+                    <input type="number" name="altura" placeholder="Ingrese su altura en cm" id="altura">
+                </p>
+                <p>
+                    <label for="peso">Peso:</label>
+                    <input type="number" name="peso" placeholder="Ingrese su peso en kg" id="peso">
+                </p>
+                <p>
+                    <label for="edad">Altura:</label>
+                    <input type="number" name="edad" placeholder="Ingrese su edad" id="edad">
+                </p>
+                <p>
+                    <label for="frecuencia">Objetivo:
+                        <select name="frecuencia" id="frecuencia">
+                            <option value="nada">Nada o muy poco</option>
+                            <option value="ligero">Ejercicio ligero (1 a 3 días por semana)</option>
+                            <option value="moderado">Ejercicio moderado (3 a 5 días por semana)</option>
+                            <option value="fuerte">Ejercicio fuerte (6 a 7 días por semana)</option>
+                            <option value="muyfuerte">Ejercicio muy fuerte (dos veces al dia por semana)</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <button type="submit">Calcular</button>
+                </p>
+            </form>
+
+        </div>
+        <div id="resultadocalculadora">Resultado: 4500 kcal</div>
     </div>
 
-    <h2 id="resultadocalculadora">Resultado</h2>
 
-    <img src="Recursos/Verduras.png" width="1500" alt="Variedad de verduras">
 </main>
+
 </body>
+
 </html>

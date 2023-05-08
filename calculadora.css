@@ -1,0 +1,57 @@
+.formcalculadora {
+    font-size: 120%;
+    position: absolute;
+    font-weight: bold;
+    margin: 5% 3% 5% 60%;
+    padding: 2% 1% 2% 2%;
+    right: 4%;
+    top: 25%;
+    float: right;
+    background: #CAF729;
+    text-align: justify;
+    border-radius: 16%;
+}
+
+.introcalculadora {
+    display: block;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    margin: 5% 40% 5% 3%;
+}
+
+#calcmanzana {
+    position: relative;
+    float: right;
+    width: 30%;
+    margin: 3% 5% 5% 3%;
+}
+
+.img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#resultadocalculadora {
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+    position: absolute;
+    padding: 3%;
+    border-radius: 60px;
+    top: 52%;
+    left: 16%;
+    background-color: #21B6B6;
+}
+
+#verduras {
+    position: relative;
+    width: 100%;
+    margin-bottom: -2%;
+}
+
+button {
+
+}
