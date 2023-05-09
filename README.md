@@ -33,7 +33,7 @@ Estructura de Proyecto Lab de Compu II - 2023
 - [x] El proyecto debe estar subido al repositorio adecuado "Proyecto2023-ApellidoAlumno1-ApellidoAlumno2"
 - [x] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores con nombre y apellido, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
 - [x] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups/Wireframes). Es importante que contenga SKETCH y MOCKUP/WIREFRAME (debe estar en formato: PDF, PNG o JPG).
-- [ ] El código debe estar pusheado en el repositorio (emplear gh-pages ó publicar la página desde el main), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
+- [x] El código debe estar pusheado en el repositorio (emplear gh-pages ó publicar la página desde el main), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
 - [x] Publicar la Web empleando GitHubPages
 - [x] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)
 
@@ -46,8 +46,8 @@ Estructura de Proyecto Lab de Compu II - 2023
 - [x] Debe haber navegación entre todas las páginas
 
 ### Sobre el HTML
-- [ ] Todas las etiquetas deben estar en minúscula
-- [ ] Poner comillas a todos los atributos
+- [x] Todas las etiquetas deben estar en minúscula
+- [x] Poner comillas a todos los atributos
 - [x] Title debe contener el título de la página
 - [x] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripcion y palabras clave
 - [x] Emplear al menos 3 etiquetas semánticas diferentes (header, nav, aside, main, section, article, footer)
