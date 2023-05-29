@@ -6,16 +6,13 @@
     <meta name="author" content="Bautista Juncos y Sofia Oliveto">
     <meta name="description" content="Proyecto para Laboratorio de Computacion II">
     <meta name="keywords" content="calculadora, calorias, salud, comida">
-
     <link rel="shorcut icon" href="Recursos/Logo.png">
-
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="Comun.css" type="text/css">
-
     <link rel="stylesheet" href="calculadora.css" type="text/css">
+    <script type="text/javascript" src="misFuncionesSofi.js"></script>
 
 </head>
 
@@ -38,8 +35,8 @@
 
         <h1 id="titulocalc">Calculadora de calorías</h1>
 
-        <h4>Aquí podremos calcular la cantidad de calorías que deberías consumir cotidianamente con tal de conseguir los
-            resultados que esperas. ¡Pruebala!</h4>
+        <h4>Aquí podrás calcular la cantidad de calorías que deberías consumir cotidianamente para mantenerte en tu peso
+            actual. ¡Pruebala!</h4>
 
     </div>
 
@@ -62,34 +59,24 @@
                 </p>
                 <p>
                     <label for="altura">Altura:</label>
-                    <input type="number" name="altura" placeholder="Ingrese su altura en cm" id="altura">
+                    <input type="number" name="altura" placeholder="Ingrese su altura en cm" id="altura" min="20"
+                           required>
                 </p>
                 <p>
                     <label for="peso">Peso:</label>
-                    <input type="number" name="peso" placeholder="Ingrese su peso en kg" id="peso">
+                    <input type="number" name="peso" placeholder="Ingrese su peso en kg" id="peso" min="5" required>
                 </p>
                 <p>
                     <label for="edad">Edad:</label>
-                    <input type="number" name="edad" placeholder="Ingrese su edad" id="edad">
+                    <input type="number" name="edad" placeholder="Ingrese su edad" id="edad" min="1" required>
                 </p>
                 <p>
-                    <label for="frecuencia">Nivel de actividad diaria:
-                        <select name="frecuencia" id="frecuencia">
-                            <option value="nada">Nada o muy poco</option>
-                            <option value="ligero">Ejercicio ligero (1 a 3 días por semana)</option>
-                            <option value="moderado">Ejercicio moderado (3 a 5 días por semana)</option>
-                            <option value="fuerte">Ejercicio fuerte (6 a 7 días por semana)</option>
-                            <option value="muyfuerte">Ejercicio muy fuerte (dos veces al dia por semana)</option>
-                        </select>
-                    </label>
-                </p>
-                <p>
-                    <button type="submit">Calcular</button>
+                    <button type="button" onclick="calcularCalorias()">Calcular</button>
                 </p>
             </form>
 
         </div>
-        <div id="resultadocalculadora">Resultado: 4500 kcal</div>
+        <div id="resultadocalculadora" style="display:none">Resultado:</div>
     </div>
 
 
