@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="index.css" type="text/css">
 
+    <script type="text/javascript" src="Mis_funciones_bauti.js"></script>
+
 </head>
 <body>
 <header>
@@ -45,20 +47,21 @@
         <form action="SeleccionMusculos.html">
             <p>
                 <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombre">
+                <input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombre" required onchange="alerta()">
             </p>
             <p>
                 <label for="sexo"> Sexo:
                     <select name="sexo" id="sexo">
                         <option value="femenino">Femenino</option>
                         <option value="masculino">Masculino</option>
-                        <option value="nodecirlo">Prefiero no decirlo</option>
+                        <option value="no decirlo">Prefiero no decirlo</option>
                     </select>
                 </label>
             </p>
             <p>
                 <label for="edad">Edad:</label>
-                <input type="number" name="edad" placeholder="Ingrese su edad" id="edad">
+                <input type="range" name="edad" min="1" max="100" step="1" placeholder="Ingrese su edad" id="edad" value="1" oninput="deslizante()">
+                <output id="outedad">1</output>
             </p>
             <p>
                 <label for="nivel"> Nivel:
@@ -82,7 +85,7 @@
                 ¡Vamos a ello!
             </p>
             <p>
-                <button name="senddata" type="submit">Siguiente</button>
+                <button name="senddata" type="submit" onclick="guardarLocalStorageIndex()">Siguiente</button>
                 <button name="borrar" type="reset">Resetear valores</button>
             </p>
         </form>

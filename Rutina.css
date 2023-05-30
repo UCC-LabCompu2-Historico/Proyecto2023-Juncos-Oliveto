@@ -11,6 +11,15 @@ div h2 {
     text-align: center;
 }
 
+input[type="text"]:disabled {
+    background: transparent;
+    text-shadow: 2px 2px black;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+
 body {
     background: white;
 }

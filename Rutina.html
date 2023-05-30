@@ -10,12 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="Comun.css" type="text/css">
+
     <link rel="stylesheet" href="Rutina.css" type="text/css">
+
     <link rel="shorcut icon" href="Recursos/Logo.png">
+
+    <script type="text/javascript" src="Mis_funciones_bauti.js"></script>
+
 </head>
 
-<body>
+<body onload="cargarLSnombre()">
 
 <header>
     <img src="Recursos/Logo.png" alt="Logo músculo" id="logo">
@@ -31,7 +37,7 @@
 
 <main>
 
-    <div><h2>Rutina para Juan Bautista:</h2></div>
+    <div><h2>Rutina para: <input id="nombreUsu" type="text" disabled></h2></div>
 
     <div id="rutina">
         <div id="ejercicio1">
