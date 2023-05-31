@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="Comun.css" type="text/css">
     <link rel="stylesheet" href="calculadora.css" type="text/css">
     <script type="text/javascript" src="misFuncionesSofi.js"></script>
+    <script type="text/javascript" src="Mis_funciones_bauti.js"></script>
 
 </head>
 
@@ -68,7 +69,8 @@
                 </p>
                 <p>
                     <label for="edad">Edad:</label>
-                    <input type="number" name="edad" placeholder="Ingrese su edad" id="edad" min="1" required>
+                    <input type="range" name="edad" placeholder="Ingrese su edad" id="edad" min="1" oninput="deslizante()">
+                    <output id="outedad">1</output>
                 </p>
                 <p>
                     <button type="button" onclick="calcularCalorias()">Calcular</button>
