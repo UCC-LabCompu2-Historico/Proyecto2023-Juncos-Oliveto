@@ -14,9 +14,11 @@
 
     <link rel="shorcut icon" href="Recursos/Logo.png">
 
+    <script type="text/javascript" src="Mis_funciones_bauti.js"></script>
+
 </head>
 
-<body>
+<body onload="dibujarCuerpoAtras()">
 
 <header>
     <img src="Recursos/Logo.png" alt="Logo músculo" id="logo">
@@ -33,10 +35,10 @@
 <main>
     <div id="agregarmusculos">
         <h1>¡Agregue hasta 5 músculos a su rutina!</h1>
-        <canvas id="cuerpoadelante">
+        <canvas id="cuerpoadelante" width="360px" height="600px">
             Tu navegador no soporta el tag Canvas de HTML
         </canvas>
-        <canvas id="cuerpoatras">
+        <canvas id="cuerpoatras" width='95' height='158'>
             Tu navegador no soporta el tag Canvas de HTML
         </canvas>
         <br>
