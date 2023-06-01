@@ -16,9 +16,11 @@
 
     <script type="text/javascript" src="Mis_funciones_bauti.js"></script>
 
+    <script type="text/javascript" src="funcionesCanvas.js"></script>
+
 </head>
 
-<body onload="dibujarCuerpoAtras()">
+<body onload="dibujarCuerpo(); pintarCuadriceps()">
 
 <header>
     <img src="Recursos/Logo.png" alt="Logo músculo" id="logo">
@@ -38,12 +40,12 @@
         <canvas id="cuerpoadelante" width="360px" height="600px">
             Tu navegador no soporta el tag Canvas de HTML
         </canvas>
-        <canvas id="cuerpoatras" width='95' height='158'>
+        <canvas id="cuerpoatras" width="360px" height="600px">
             Tu navegador no soporta el tag Canvas de HTML
         </canvas>
         <br>
-        <img src="Recursos/CuerpoAdelante.png" alt="Cuerpo visto de adelante con los músculos marcados" class="cuerpo">
-        <img src="Recursos/CuerpoAtras.png" alt="Cuerpo visto de atrás con los músculos marcados" class="cuerpo">
+        <!--<img src="Recursos/CuerpoAdelante.png" alt="Cuerpo visto de adelante con los músculos marcados" class="cuerpo">
+        <img src="Recursos/CuerpoAtras.png" alt="Cuerpo visto de atrás con los músculos marcados" class="cuerpo"> -->
     </div>
 
     <div id="formulariomusculos">
@@ -90,7 +92,6 @@
             <br>
             <p>
                 <button name="crearrutina" type="submit">Crear rutina</button>
-                <button name="borrar" type="reset">Resetear valores</button>
             </p>
         </form>
     </div>
