@@ -32945,7 +32945,7 @@ let pintarPectorales = () => {
             ctx.bezierCurveTo(167.247640, 167.114820, 148.374390, 172.208180, 135.223160, 167.066550);
             ctx.closePath();
             ctx.fill();
-            ctx.stroke();
+
             // #path319
             ctx.beginPath();
             ctx.fillStyle = 'rgb(255, 0, 0)';
@@ -32963,7 +32963,7 @@ let pintarPectorales = () => {
             ctx.bezierCurveTo(228.333930, 168.492710, 215.335080, 171.870040, 202.975980, 167.461640);
             ctx.closePath();
             ctx.fill();
-            ctx.stroke();
+
         }else {
 
             let ctx = document.getElementById("cuerpoadelante").getContext("2d");
@@ -33040,7 +33040,6 @@ let pintarHombros = () => {
             ctx.bezierCurveTo(103.126500, 146.790820, 86.795926, 152.078650, 86.795926, 150.103900);
             ctx.closePath();
             ctx.fill();
-            ctx.stroke();
 
             // #path467
             ctx.beginPath();
@@ -33057,7 +33056,6 @@ let pintarHombros = () => {
             ctx.bezierCurveTo(275.563340, 151.078130, 274.843000, 151.170340, 266.580430, 148.887890);
             ctx.closePath();
             ctx.fill();
-            ctx.stroke();
 
         }else{
 
@@ -33132,7 +33130,6 @@ let pintarBiceps = () => {
             ctx.bezierCurveTo(73.868980, 207.690250, 71.094245, 206.488440, 69.517590, 205.019570);
             ctx.closePath();
             ctx.fill();
-            ctx.stroke();
 
             // #path471
             ctx.beginPath();
@@ -33147,7 +33144,7 @@ let pintarBiceps = () => {
             ctx.bezierCurveTo(290.584990, 208.633550, 284.516900, 208.540490, 278.964750, 204.716550);
             ctx.closePath();
             ctx.fill();
-            ctx.stroke();
+
         }else{
 
             let ctx = document.getElementById("cuerpoadelante").getContext("2d");
@@ -33280,7 +33277,6 @@ let pintarAbdominales = () => {
             ctx.bezierCurveTo(178.551620, 223.240750, 183.101880, 224.238500, 183.735130, 219.779680);
             ctx.closePath();
             ctx.fill();
-            ctx.stroke();
 
         }else{
             let ctx = document.getElementById("cuerpoadelante").getContext("2d");
@@ -33406,7 +33402,7 @@ let pintarCuadriceps = () => {
             ctx.bezierCurveTo(147.209760, 426.418220, 142.552370, 426.881670, 139.899550, 423.750110);
             ctx.closePath();
             ctx.fill();
-            ctx.stroke();
+
 
             // #path546
             ctx.beginPath();
@@ -33428,7 +33424,6 @@ let pintarCuadriceps = () => {
             ctx.bezierCurveTo(223.220580, 425.837020, 216.938050, 428.345300, 211.924530, 423.130140);
             ctx.closePath();
             ctx.fill();
-            ctx.stroke();
 
         }else {
 
