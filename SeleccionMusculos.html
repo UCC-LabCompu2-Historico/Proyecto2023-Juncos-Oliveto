@@ -15,12 +15,12 @@
     <link rel="shorcut icon" href="Recursos/Logo.png">
 
     <script type="text/javascript" src="Mis_funciones_bauti.js"></script>
-
+    <script type="text/javascript" src="misFuncionesSofi.js"></script>
     <script type="text/javascript" src="funcionesCanvas.js"></script>
 
 </head>
 
-<body onload="dibujarCuerpo(); pintarCuadriceps()">
+<body onload="dibujarCuerpo(); pintarCuadriceps();">
 
 <header>
     <img src="Recursos/Logo.png" alt="Logo músculo" id="logo">
@@ -91,7 +91,7 @@
             </p>
             <br>
             <p>
-                <button name="crearrutina" type="submit">Crear rutina</button>
+                <button name="crearrutina" type="submit" onclick="localStorageMusculos()">Crear rutina</button>
             </p>
         </form>
     </div>
