@@ -59,7 +59,7 @@ let cargarLSnombre = () =>{
 /**
  * Limitamos la cantidad de checkboxes que pueden ser tildados
  * @method limiteChckbox
- * @return false
+ * @return boolean
  */
 let limiteChckbox = () => {           //Si no usamos return nos sigue permitiendo tildar el checkbox
 
@@ -79,6 +79,32 @@ let limiteChckbox = () => {           //Si no usamos return nos sigue permitiend
 
     if(tildes>=5){
         alert("No seleccione mas de 4 musculos");
+        return false;
+    }
+
+}
+
+/**
+ * Establecemos un minimo de 1 checkbox tildado
+ * @method validate
+ * @return boolean
+ */
+
+let validate = () => {
+
+    var form=document.getElementsByName("selector");
+    var minimo=false;
+
+    for( var i = 0 ; i<form.length ; i++){
+
+        if(form[i].checked){
+            minimo=true;
+        }
+
+    }
+
+    if(minimo===false){
+        alert("Debes seleccionar al menos un musculo");
         return false;
     }
 

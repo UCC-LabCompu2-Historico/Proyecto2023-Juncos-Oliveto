@@ -32667,7 +32667,7 @@ let pintarPectorales = () => {
 
             // #path317
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(255, 0, 0)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.strokeStyle="#2ECBAA";
             ctx.lineWidth = 1.239940;
             ctx.moveTo(135.223160, 167.066550);
@@ -32687,7 +32687,7 @@ let pintarPectorales = () => {
 
             // #path319
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(255, 0, 0)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.strokeStyle="#2ECBAA";
             ctx.lineWidth = 1.239940;
             ctx.moveTo(202.975980, 167.461660);
@@ -32766,7 +32766,7 @@ let pintarHombros = () => {
 
             // #path390
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(255, 255, 0)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.strokeStyle="#2ECBAA";
             ctx.lineWidth = 1.239940;
             ctx.moveTo(86.795926, 150.103900);
@@ -32782,7 +32782,7 @@ let pintarHombros = () => {
 
             // #path467
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(255, 255, 0)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.strokeStyle="#2ECBAA";
             ctx.lineWidth = 1.239940;
             ctx.moveTo(266.580430, 148.887890);
@@ -32855,7 +32855,7 @@ let pintarBiceps = () => {
 
             // #path469
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(0, 128, 0)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.strokeStyle="#2ECBAA";
             ctx.lineWidth = 1.239940;
             ctx.moveTo(69.517590, 205.019570);
@@ -32872,7 +32872,7 @@ let pintarBiceps = () => {
 
             // #path471
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(0, 128, 0)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.strokeStyle="#2ECBAA";
             ctx.lineWidth = 1.239940;
             ctx.moveTo(278.964750, 204.716550);
@@ -32941,7 +32941,7 @@ let pintarAbdominales = () => {
 
             // #path473
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(14,92,250)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.stroke= "#2ECBAA";
             ctx.lineWidth = 1.239940;
             ctx.moveTo(174.983430, 286.416040);
@@ -33122,7 +33122,7 @@ let pintarCuadriceps = () => {
 
             // #path544
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(128, 0, 128)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.stroke="#2ECBAA";
             ctx.lineWidth = 1.239940;
             ctx.moveTo(139.899550, 423.750110);
@@ -33145,7 +33145,7 @@ let pintarCuadriceps = () => {
 
             // #path546
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(128, 0, 128)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.stroke="#2ECBAA";
             ctx.lineWidth = 1.239940;
             ctx.moveTo(211.924530, 423.130140);
@@ -33233,7 +33233,7 @@ let pintarTriceps = () => {
 
 // #path550
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(0, 255, 255)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.stroke="#2ECBAA";
             ctx.lineWidth = 0.699416;
             ctx.moveTo(72.743317, 204.397910);
@@ -33255,7 +33255,7 @@ let pintarTriceps = () => {
 
 // #path552
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(0, 255, 255)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.stroke="#2ECBAA";
             ctx.lineWidth = 0.699416;
             ctx.moveTo(282.087960, 202.777410);
@@ -33344,7 +33344,7 @@ let pintarEspalda = () => {
 
             // #path471
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(255, 0, 0)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.stroke="#2ECBAA";
             ctx.lineWidth = 0.699416;
             ctx.moveTo(125.884180, 263.270440);
@@ -33374,7 +33374,7 @@ let pintarEspalda = () => {
 
             // #path473
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(255, 0, 0)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.stroke="#2ECBAA";
             ctx.lineWidth = 0.699416;
             ctx.moveTo(230.692250, 261.696670);
@@ -33477,7 +33477,7 @@ let pintarGluteos = () => {
 
             // #path554
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(128, 0, 128)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.lineWidth = 0.699416;
             ctx.moveTo(151.328900, 319.505760);
             ctx.bezierCurveTo(139.315340, 317.672460, 131.073590, 311.052110, 129.678660, 302.114740);
@@ -33493,7 +33493,7 @@ let pintarGluteos = () => {
 
             // #path1442
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(128, 0, 128)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.lineWidth = 0.699416;
             ctx.moveTo(190.475890, 319.493290);
             ctx.bezierCurveTo(187.203310, 318.424360, 185.026890, 316.455240, 183.692160, 313.355630);
@@ -33567,7 +33567,7 @@ let pintarIsquios = () => {
 
 // #path1565
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(0, 255, 0)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.lineWidth = 0.699416;
             ctx.moveTo(143.270230, 427.794280);
             ctx.bezierCurveTo(141.124290, 425.965340, 140.500120, 423.883620, 139.532510, 415.328550);
@@ -33604,7 +33604,7 @@ let pintarIsquios = () => {
 
             // #path1567
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(0, 255, 0)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.lineWidth = 0.699416;
             ctx.moveTo(212.456420, 427.923580);
             ctx.bezierCurveTo(209.048950, 425.295290, 206.261090, 418.643360, 203.971410, 407.678270);
@@ -33745,7 +33745,7 @@ let pintarPantorrillas = () => {
 
             // #path2364
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(255, 255, 0)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.lineWidth = 0.699416;
             ctx.moveTo(133.713790, 507.648820);
             ctx.bezierCurveTo(131.835000, 506.047500, 131.058880, 504.075500, 129.977100, 498.154390);
@@ -33774,7 +33774,7 @@ let pintarPantorrillas = () => {
 
             // #path2366
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(255, 255, 0)';
+            ctx.fillStyle = 'rgb(255,255,255)';
             ctx.lineWidth = 0.699416;
             ctx.moveTo(221.918060, 507.234230);
             ctx.bezierCurveTo(219.397920, 505.290340, 215.163020, 498.518840, 215.163020, 496.433120);
