@@ -1,16 +1,14 @@
 /**
  * Avisa cuando el nombre ingresado es puramente un numero
  * @method alerta
- * @return
  */
-
 let alerta = () => {
     let nombre = document.getElementById("nombre").value;
 
     if(isNaN(nombre)){
     }else{
-        nombre="";
-        alert("Ingrese un nombre acorde")
+        document.getElementById("nombre").value='';
+        alert("Ingrese un nombre válido")
     }
 }
 
@@ -20,7 +18,7 @@ let alerta = () => {
  * @return
  */
 let deslizante= () =>{
-    var edad=document.getElementById("edad").value;
+    let edad=document.getElementById("edad").value;
     document.getElementById("outedad").value=edad;
 }
 
@@ -28,14 +26,13 @@ let deslizante= () =>{
  * Guardamos datos ingresados por el usuario en 'index.html' usando localstorage para usarlos en 'Rutina.html'
  * @method guardarLocalStorageIndex
  */
-
 let guardarLocalStorageIndex = () =>{
     let nombre, sexo, edad, nivel, objetivo;
 
     nombre=document.getElementsByName("nombre")[0].value;
     sexo=document.getElementById("sexo").value;
     edad=document.getElementsByName("edad")[0].value;
-    nivel=document.getElementById("nivel")[0].value;
+    nivel=document.getElementById("nivel").value;
     objetivo=document.getElementById("objetivo").value;
 
     localStorage.setItem("nombreLS", nombre);
@@ -50,9 +47,8 @@ let guardarLocalStorageIndex = () =>{
  * Cargamos el nombre del usuario en la rutina para darle una atencion mas personalizada
  * @method cargarLSnombre
  */
-
 let cargarLSnombre = () =>{
-    var nombreUsuario;
+    let nombreUsuario;
 
     nombreUsuario=localStorage.getItem("nombreLS");
 
@@ -65,7 +61,6 @@ let cargarLSnombre = () =>{
  * @method limiteChckbox
  * @return false
  */
-
 let limiteChckbox = () => {           //Si no usamos return nos sigue permitiendo tildar el checkbox
 
     let chckbox = document.getElementsByName("selector");

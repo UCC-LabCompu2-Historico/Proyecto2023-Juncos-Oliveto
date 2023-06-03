@@ -29,6 +29,7 @@ p {
 }
 
 #ejercicio1 {
+    display: none;
     background: #21B6B6;
     position: relative;
     float: left;
@@ -40,6 +41,7 @@ p {
 }
 
 #ejercicio2 {
+    display: none;
     background: #79DD7E;
     position: relative;
     float: right;
@@ -51,6 +53,7 @@ p {
 }
 
 #ejercicio3 {
+    display: none;
     background: #2ECBAA;
     position: relative;
     float: left;
@@ -62,6 +65,7 @@ p {
 }
 
 #ejercicio4 {
+    display: none;
     background: #CAF729;
     position: relative;
     float: right;
@@ -84,11 +88,11 @@ button {
     text-align: center;
 }
 
-.nombreejercicio {
-    font-weight: bold;
-}
-
 #primerboton {
     position: relative;
-    margin: 2% 2% 2% -16%;
+    margin: 15% 2% 2% -16%;
+}
+
+.titulo{
+    font-weight: bold;
 }

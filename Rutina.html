@@ -18,10 +18,11 @@
     <link rel="shorcut icon" href="Recursos/Logo.png">
 
     <script type="text/javascript" src="Mis_funciones_bauti.js"></script>
+    <script type="text/javascript" src="misFuncionesSofi.js"></script>
 
 </head>
 
-<body onload="cargarLSnombre()">
+<body onload="cargarLSnombre(); ejercicios()">
 
 <header>
     <img src="Recursos/Logo.png" alt="Logo músculo" id="logo">
@@ -37,31 +38,31 @@
 
 <main>
 
-    <div><h2>Rutina para: <input id="nombreUsu" type="text" disabled></h2></div>
+    <div><h2><label for="nombreUsu">Rutina para: <input id="nombreUsu" type="text" disabled></label></h2></div>
 
     <div id="rutina">
         <div id="ejercicio1">
-            <p class="nombreejercicio"> Press plano </p>
-            <p> 4 series x8 repeticiones </p>
-            <img src="Recursos/PressPlano.png" alt="Ejercicio press plano" class="imagenenjercicio">
+            <p id="nombreejercicio1" class="titulo"> Nombre del ejercicio 1 </p>
+            <p class="repeticiones"> Series y repeticiones </p>
+            <!--<img src="Recursos/PressPlano.png" alt="Ejercicio press plano" class="imagenenjercicio">-->
         </div>
 
         <div id="ejercicio2">
-            <p class="nombreejercicio"> Peck deck </p>
-            <p> 4 series x12 repeticiones </p>
-            <img src="Recursos/PeckDeck.png" alt="Ejercicio peck deck" class="imagenenjercicio">
+            <p id="nombreejercicio2" class="titulo"> Nombre del ejercicio 2 </p>
+            <p class="repeticiones">Series y repeticiones </p>
+            <!--<img src="Recursos/PeckDeck.png" alt="Ejercicio peck deck" class="imagenenjercicio">-->
         </div>
 
         <div id="ejercicio3">
-            <p class="nombreejercicio"> Press militar </p>
-            <p> 4 series x10 repeticiones </p>
-            <img src="Recursos/PressMilitar.png" alt="Ejercicio press militar" class="imagenenjercicio">
+            <p id="nombreejercicio3" class="titulo"> Nombre del ejercicio 3 </p>
+            <p class="repeticiones">Series y repeticiones </p>
+            <!--<img src="Recursos/PressMilitar.png" alt="Ejercicio press militar" class="imagenenjercicio">-->
         </div>
 
         <div id="ejercicio4">
-            <p class="nombreejercicio"> Extensión de tríceps en polea </p>
-            <p> 4 series x12 repeticiones </p>
-            <img src="Recursos/ExtensionTricepsPolea.png" alt="Ejercicio extensión de triceps" class="imagenenjercicio">
+            <p id="nombreejercicio4" class="titulo"> Nombre del ejercicio 4 </p>
+            <p class="repeticiones">Series y repeticiones </p>
+            <!--<img src="Recursos/ExtensionTricepsPolea.png" alt="Ejercicio extensión de triceps" class="imagenenjercicio">-->
         </div>
 
         <div>

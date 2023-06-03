@@ -1,7 +1,6 @@
 /**
- * Funcion que calcula las calorias de mantenimiento de una persona
+ * Calcula las calorias de mantenimiento de una persona
  * @method calcularCalorias
- * @return
  */
 const calcularCalorias = () => {
     let resultado;
@@ -16,11 +15,11 @@ const calcularCalorias = () => {
         resultado = 66 + (13.7 * _peso) + (5 * _altura) - (6.75 * _edad);
     }
 
-    if (_edad <= 0 || _peso <= 0 || _altura <= 0) {
-        /*_edad="";
-        _peso="";
-        _altura="";*/
-        alert("Los valores ingresados son incorrectos");
+    if (_edad <= 0 || _peso <= 0 || _altura <= 0 || _peso > 700 || _altura > 300) {
+        alert("Ingrese valores validos");
+        document.getElementById("altura").value='';
+        document.getElementById("edad").value='';
+        document.getElementById("peso").value='';
     } else {
         document.getElementById("resultadocalculadora").innerHTML = "Calorias para mantenimiento: " + resultado;
         document.getElementById("resultadocalculadora").style.display = "block";
@@ -28,159 +27,162 @@ const calcularCalorias = () => {
 }
 
 /**
- * Funcion que junta todas las funciones de guardar en LS los musculos seleccionados
- * @method localStorageMusculos
- * @return
+ * Guarda los musculos seleccionados en forma de arreglo en el localstorage
+ * @method guardarMusculos
  */
-let localStorageMusculos = () => {
-    guardarPectorales();
-    guardarHombros();
-    guardarTriceps();
-    guardarBiceps();
-    guardarAbdominales();
-    guardarEspalda();
-    guardarCuadriceps();
-    guardarIsquios();
-    guardarGluteos();
-    guardarPantorrillas();
-}
-
-/**
- * Funcion que si detecta si el checkbox del musculo esta marcado y si es asi lo guarda en el local storage
- * @method guardarPectorales
- * @return
- */
-let guardarPectorales = () => {
-    let checkbox = document.getElementById("pectorales");
-    let pectorales;
-    if (checkbox.checked) {
-        pectorales = document.getElementById("pectorales").value;
-        localStorage.setItem("pectoralesLS", pectorales);
+let guardarMusculos = () => {
+    let arrayMusculos = [];
+    let checkPectorales = document.getElementById("pectorales");
+    let checkHombros = document.getElementById("hombros");
+    let checkTriceps = document.getElementById("triceps");
+    let checkboxBiceps = document.getElementById("biceps");
+    let checkboxAbdominales = document.getElementById("abdominales");
+    let checkboxEspalda = document.getElementById("espalda");
+    let checkboxCuadriceps = document.getElementById("cuadriceps");
+    let checkboxIsquios = document.getElementById("isquios");
+    let checkboxGluteos = document.getElementById("gluteos");
+    let checkboxPantorrillas = document.getElementById("pantorrillas");
+    if (checkPectorales.checked){
+        arrayMusculos.push("pectorales");
     }
-}
-
-/**
- * Funcion que si detecta si el checkbox del musculo esta marcado y si es asi lo guarda en el local storage
- * @method guardarHombros
- * @return
- */
-let guardarHombros = () => {
-    let checkbox = document.getElementById("hombros");
-    let hombros;
-    if (checkbox.checked) {
-        hombros = document.getElementById("hombros").value;
-        localStorage.setItem("hombrosLS", hombros);
+    if (checkHombros.checked){
+        arrayMusculos.push("hombros");
     }
-}
-
-/**
- * Funcion que si detecta si el checkbox del musculo esta marcado y si es asi lo guarda en el local storage
- * @method guardarTriceps
- * @return
- */
-let guardarTriceps = () => {
-    let checkbox = document.getElementById("triceps");
-    let triceps;
-    if (checkbox.checked) {
-        triceps = document.getElementById("triceps").value;
-        localStorage.setItem("tricepsLS", triceps);
+    if (checkTriceps.checked){
+        arrayMusculos.push("triceps");
     }
-}
-
-/**
- * Funcion que si detecta si el checkbox del musculo esta marcado y si es asi lo guarda en el local storage
- * @method guardarBiceps
- * @return
- */
-let guardarBiceps = () => {
-    let checkbox = document.getElementById("biceps");
-    let biceps;
-    if (checkbox.checked) {
-        biceps = document.getElementById("biceps").value;
-        localStorage.setItem("bicepsLS", biceps);
+    if (checkboxBiceps.checked){
+        arrayMusculos.push("biceps");
     }
-}
-
-/**
- * Funcion que si detecta si el checkbox del musculo esta marcado y si es asi lo guarda en el local storage
- * @method guardarAbdominales
- * @return
- */
-let guardarAbdominales = () => {
-    let checkbox = document.getElementById("abdominales");
-    let abdominales;
-    if (checkbox.checked) {
-        abdominales = document.getElementById("abdominales").value;
-        localStorage.setItem("abdominalesLS", abdominales);
+    if (checkboxAbdominales.checked){
+        arrayMusculos.push("abdominales");
     }
-}
-
-/**
- * Funcion que si detecta si el checkbox del musculo esta marcado y si es asi lo guarda en el local storage
- * @method guardarEspalda
- * @return
- */
-let guardarEspalda = () => {
-    let checkbox = document.getElementById("espalda");
-    let espalda;
-    if (checkbox.checked) {
-        espalda = document.getElementById("espalda").value;
-        localStorage.setItem("espaldaLS", espalda);
+    if (checkboxEspalda.checked){
+        arrayMusculos.push("espalda");
     }
-}
-
-/**
- * Funcion que si detecta si el checkbox del musculo esta marcado y si es asi lo guarda en el local storage
- * @method guardarCuadriceps
- * @return
- */
-let guardarCuadriceps = () => {
-    let checkbox = document.getElementById("cuadriceps");
-    let cuadriceps;
-    if (checkbox.checked) {
-        cuadriceps = document.getElementById("cuadriceps").value;
-        localStorage.setItem("cuadricepsLS", cuadriceps);
+    if (checkboxCuadriceps.checked){
+        arrayMusculos.push("cuadriceps");
     }
-}
-
-/**
- * Funcion que si detecta si el checkbox del musculo esta marcado y si es asi lo guarda en el local storage
- * @method guardarIsquios
- * @return
- */
-let guardarIsquios = () => {
-    let checkbox = document.getElementById("isquios");
-    let isquios;
-    if (checkbox.checked) {
-        isquios = document.getElementById("isquios").value;
-        localStorage.setItem("isquiosLS", isquios);
+    if (checkboxIsquios.checked){
+        arrayMusculos.push("isquios");
     }
-}
-
-/**
- * Funcion que si detecta si el checkbox del musculo esta marcado y si es asi lo guarda en el local storage
- * @method guardarGluteos
- * @return
- */
-let guardarGluteos = () => {
-    let checkbox = document.getElementById("gluteos");
-    let gluteos;
-    if (checkbox.checked) {
-        gluteos = document.getElementById("gluteos").value;
-        localStorage.setItem("gluteosLS", gluteos);
+    if (checkboxGluteos.checked){
+        arrayMusculos.push("gluteos");
     }
+    if (checkboxPantorrillas.checked){
+        arrayMusculos.push("pantorrillas");
+    }
+
+    let cadenaMusculos = JSON.stringify(arrayMusculos);
+    localStorage.setItem("musculosLS",cadenaMusculos);
 }
 
 /**
- * Funcion que si detecta si el checkbox del musculo esta marcado y si es asi lo guarda en el local storage
- * @method guardarPantorrillas
- * @return
+ * Asigna ejercicios segun los musculos seleccionados, el nivel y el objetivo
+ * @method ejercicios
  */
-let guardarPantorrillas = () => {
-    let checkbox = document.getElementById("pantorrillas");
-    let pantorrillas;
-    if (checkbox.checked) {
-        pantorrillas = document.getElementById("pantorrillas").value;
-        localStorage.setItem("pantorrillasLS", pantorrillas);
+let ejercicios = () => {
+    let nivel = localStorage.getItem("nivelLS");
+    let objetivo = localStorage.getItem("objetivoLS");
+    let repeticiones;
+    let repeticionesHtml = document.getElementsByClassName("repeticiones");
+    let cadenaMusculos=localStorage.getItem("musculosLS");
+    let arrayMusculos = JSON.parse(cadenaMusculos);
+
+    if (objetivo==="musculo"){
+        repeticiones="4 series de 6 repeticiones";
+    }
+    if (objetivo==="mantencion"){
+        repeticiones="4 series de 10 repeticiones";
+    }
+    if (objetivo==="peso"){
+        repeticiones="3 series de 15 repeticiones";
+    }
+    for (let j=0; j<repeticionesHtml.length; j++){
+        repeticionesHtml[j].textContent=repeticiones;
+    }
+
+    let num=1;
+    for (let i=0; i<arrayMusculos.length; i++){
+        if (arrayMusculos[i]==="pectorales"){
+            document.getElementById(`nombreejercicio${num}`).textContent = "Press de banca plano";
+            document.getElementById(`ejercicio${num}`).style.display = "block";
+            if (nivel==="principiante"){
+                document.getElementById(`nombreejercicio${num}`).textContent = "Flexion de brazos";
+            }
+            num++;
+        }
+        if (arrayMusculos[i]==="hombros"){
+            document.getElementById(`nombreejercicio${num}`).textContent= "Press de hombros";
+            document.getElementById(`ejercicio${num}`).style.display = "block";
+            if (nivel==="principiante"){
+                document.getElementById(`nombreejercicio${num}`).textContent= "Elevaciones laterales";
+            }
+            num++;
+        }
+        if (arrayMusculos[i]==="triceps"){
+            document.getElementById(`nombreejercicio${num}`).textContent= "Press frances";
+            document.getElementById(`ejercicio${num}`).style.display = "block";
+            if (nivel==="principiante"){
+                document.getElementById(`nombreejercicio${num}`).textContent= "Extension de triceps en polea";
+            }
+            num++;
+        }
+        if (arrayMusculos[i]==="biceps"){
+            document.getElementById(`nombreejercicio${num}`).textContent= "Curl arnold";
+            document.getElementById(`ejercicio${num}`).style.display = "block";
+            if (nivel==="principiante"){
+                document.getElementById(`nombreejercicio${num}`).textContent= "Curl de biceps";
+            }
+            num++;
+        }
+        if (arrayMusculos[i]==="abdominales"){
+            document.getElementById(`nombreejercicio${num}`).textContent= "Elevacion de piernas acostado";
+            document.getElementById(`ejercicio${num}`).style.display = "block";
+            if (nivel==="principiante"){
+                document.getElementById(`nombreejercicio${num}`).textContent= "Plancha abdominal";
+            }
+            num++;
+        }
+        if (arrayMusculos[i]==="espalda"){
+            document.getElementById(`nombreejercicio${num}`).textContent= "Remo unilateral";
+            document.getElementById(`ejercicio${num}`).style.display = "block";
+            if (nivel==="principiante"){
+                document.getElementById(`nombreejercicio${num}`).textContent= "Jalon al pecho";
+            }
+            num++;
+        }
+        if (arrayMusculos[i]==="cuadriceps"){
+            document.getElementById(`nombreejercicio${num}`).textContent= "Sentadilla con barra";
+            document.getElementById(`ejercicio${num}`).style.display = "block";
+            if (nivel==="principiante"){
+                document.getElementById(`nombreejercicio${num}`).textContent= "Extension de cuadriceps";
+            }
+            num++;
+        }
+        if (arrayMusculos[i]==="isquios"){
+            document.getElementById(`nombreejercicio${num}`).textContent= "Peso muerto rumano";
+            document.getElementById(`ejercicio${num}`).style.display = "block";
+            if (nivel==="principiante"){
+                document.getElementById(`nombreejercicio${num}`).textContent= "Curl de isquios";
+            }
+            num++;
+        }
+        if (arrayMusculos[i]==="gluteos"){
+            document.getElementById(`nombreejercicio${num}`).textContent= "Hip thrust";
+            document.getElementById(`ejercicio${num}`).style.display = "block";
+            if (nivel==="principiante"){
+                document.getElementById(`nombreejercicio${num}`).textContent= "Patada de gluteos";
+            }
+            num++;
+        }
+        if (arrayMusculos[i]==="pantorrillas"){
+            document.getElementById(`nombreejercicio${num}`).textContent= "Elevacion de talones en maquina";
+            document.getElementById(`ejercicio${num}`).style.display = "block";
+            if (nivel==="principiante"){
+                document.getElementById(`nombreejercicio${num}`).textContent= "Elevacion de talones";
+            }
+            num++;
+        }
     }
 }

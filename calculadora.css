@@ -40,6 +40,7 @@
 }
 
 #resultadocalculadora {
+    display: none;
     color: white;
     font-weight: bolder;
     font-size: x-large;
