@@ -59,3 +59,32 @@ let cargarLSnombre = () =>{
     document.getElementById("nombreUsu").value=nombreUsuario;
 
 }
+
+/**
+ * Limitamos la cantidad de checkboxes que pueden ser tildados
+ * @method limiteChckbox
+ * @return false
+ */
+
+let limiteChckbox = () => {           //Si no usamos return nos sigue permitiendo tildar el checkbox
+
+    let chckbox = document.getElementsByName("selector");
+
+    let cont;
+
+    let tildes = 0;
+
+    for ( cont = 0 ; cont<chckbox.length ; cont++ ){
+
+        if( chckbox[cont].checked===true){
+            tildes = tildes + 1;
+        }
+
+    }
+
+    if(tildes>=5){
+        alert("No seleccione mas de 4 musculos");
+        return false;
+    }
+
+}
