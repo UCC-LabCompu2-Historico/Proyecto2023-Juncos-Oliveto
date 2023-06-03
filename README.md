@@ -19,7 +19,7 @@ HTML y CSS por ahora.
 ### Contacto
 | Nombre | Apellido | Email              | Telefono     |  Clave UCC  |
 |--------|----------|--------------------|--------------|-------------|
-| Bautista | Juncos | 2215118@ucc.edu.ar | 2215118 | 3518113071 |
+| Bautista | Juncos | 2215118@ucc.edu.ar | 3518113071 | 2215118 |
 | Sofia | Oliveto | 2215225@ucc.edu.ar | 3515512909 | 2215225 |
 
 

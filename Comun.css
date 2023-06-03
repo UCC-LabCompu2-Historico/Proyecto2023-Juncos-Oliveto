@@ -50,12 +50,13 @@ button:hover {
     color: white;
     transition: color 0.3s linear;
 }
-input{
+
+input {
     font-family: 'Exo 2', sans-serif;
     border: 0;
 }
 
-select{
+select {
     font-family: 'Exo 2', sans-serif;
     border: 0;
 }
