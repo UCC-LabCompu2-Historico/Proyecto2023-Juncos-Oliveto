@@ -15,7 +15,6 @@ let alerta = () => {
 /**
  * Nos cambia la edad a medida que nos movemos en el selector
  * @method deslizante
- * @return
  */
 let deslizante = () => {
     let edad = document.getElementById("edad").value;

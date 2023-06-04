@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Mis_funciones_bauti.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Mis_funciones_bauti.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Avisa cuando el nombre ingresado es puramente un numero
+ * @method alerta
+ */
+let alerta = () => {
+    let nombre = document.getElementById("nombre").value;
+
+    if (isNaN(nombre)) {
+    } else {
+        document.getElementById("nombre").value = '';
+        alert("Ingrese un nombre válido")
+    }
+}
+
+/**
+ * Nos cambia la edad a medida que nos movemos en el selector
+ * @method deslizante
+ */
+let deslizante = () => {
+    let edad = document.getElementById("edad").value;
+    document.getElementById("outedad").value = edad;
+}
+
+/**
+ * Guardamos datos ingresados por el usuario en 'index.html' usando localstorage para usarlos en 'Rutina.html'
+ * @method guardarLocalStorageIndex
+ */
+let guardarLocalStorageIndex = () => {
+    let nombre, sexo, edad, nivel, objetivo;
+
+    nombre = document.getElementsByName("nombre")[0].value;
+    sexo = document.getElementById("sexo").value;
+    edad = document.getElementsByName("edad")[0].value;
+    nivel = document.getElementById("nivel").value;
+    objetivo = document.getElementById("objetivo").value;
+
+    localStorage.setItem("nombreLS", nombre);
+    localStorage.setItem("sexoLS", sexo);
+    localStorage.setItem("edadLS", edad);
+    localStorage.setItem("nivelLS", nivel);
+    localStorage.setItem("objetivoLS", objetivo);
+
+}
+
+/**
+ * Cargamos el nombre del usuario en la rutina para darle una atencion mas personalizada
+ * @method cargarLSnombre
+ */
+let cargarLSnombre = () => {
+    let nombreUsuario;
+
+    nombreUsuario = localStorage.getItem("nombreLS");
+
+    document.getElementById("nombreUsu").value = nombreUsuario;
+
+}
+
+/**
+ * Limitamos la cantidad de checkboxes que pueden ser tildados
+ * @method limiteChckbox
+ * @return boolean
+ */
+let limiteChckbox = () => {           //Si no usamos return nos sigue permitiendo tildar el checkbox
+
+    let chckbox = document.getElementsByName("selector");
+
+    let cont;
+
+    let tildes = 0;
+
+    for (cont = 0; cont &lt; chckbox.length; cont++) {
+
+        if (chckbox[cont].checked === true) {
+            tildes = tildes + 1;
+        }
+
+    }
+
+    if (tildes >= 5) {
+        alert("No seleccione mas de 4 musculos");
+        return false;
+    }
+
+}
+
+/**
+ * Establecemos un minimo de 1 checkbox tildado
+ * @method validate
+ * @return boolean
+ */
+
+let validate = () => {
+
+    var form = document.getElementsByName("selector");
+    var minimo = false;
+
+    for (var i = 0; i &lt; form.length; i++) {
+
+        if (form[i].checked) {
+            minimo = true;
+        }
+
+    }
+
+    if (minimo === false) {
+        alert("Debes seleccionar al menos un musculo");
+        return false;
+    }
+
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Listeners">Listeners</a></li><li><a href="global.html#alerta">alerta</a></li><li><a href="global.html#calcularCalorias">calcularCalorias</a></li><li><a href="global.html#cargarLSnombre">cargarLSnombre</a></li><li><a href="global.html#deslizante">deslizante</a></li><li><a href="global.html#dibujarCuerpo">dibujarCuerpo</a></li><li><a href="global.html#dibujarCuerpoAdelante">dibujarCuerpoAdelante</a></li><li><a href="global.html#dibujarCuerpoAtras">dibujarCuerpoAtras</a></li><li><a href="global.html#ejercicios">ejercicios</a></li><li><a href="global.html#guardarLocalStorageIndex">guardarLocalStorageIndex</a></li><li><a href="global.html#guardarMusculos">guardarMusculos</a></li><li><a href="global.html#limiteChckbox">limiteChckbox</a></li><li><a href="global.html#pintarAbdominales">pintarAbdominales</a></li><li><a href="global.html#pintarBiceps">pintarBiceps</a></li><li><a href="global.html#pintarCuadriceps">pintarCuadriceps</a></li><li><a href="global.html#pintarGluteos">pintarGluteos</a></li><li><a href="global.html#pintarHombros">pintarHombros</a></li><li><a href="global.html#pintarIsquios">pintarIsquios</a></li><li><a href="global.html#pintarPectorales">pintarPectorales</a></li><li><a href="global.html#pintarTriceps">pintarTriceps</a></li><li><a href="global.html#validate">validate</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Sun Jun 04 2023 19:28:55 GMT-0300 (Argentina Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
