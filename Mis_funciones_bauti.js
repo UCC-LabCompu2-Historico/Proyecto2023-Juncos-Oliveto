@@ -91,10 +91,10 @@ let limiteChckbox = () => {           //Si no usamos return nos sigue permitiend
 
 let validate = () => {
 
-    var form = document.getElementsByName("selector");
-    var minimo = false;
+    const form = document.getElementsByName("selector");
+    let minimo = false;
 
-    for (var i = 0; i < form.length; i++) {
+    for (let i = 0; i < form.length; i++) {
 
         if (form[i].checked) {
             minimo = true;
