@@ -76,12 +76,6 @@ p {
     opacity: .8;
 }
 
-.imagenenjercicio {
-    width: 50%;
-    position: relative;
-    left: auto;
-}
-
 button {
     position: relative;
     padding: 1% 4% 1% 4%;

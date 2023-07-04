@@ -17,8 +17,7 @@ let alerta = () => {
  * @method deslizante
  */
 let deslizante = () => {
-    let edad = document.getElementById("edad").value;
-    document.getElementById("outedad").value = edad;
+    document.getElementById("outedad").value = document.getElementById("edad").value;
 }
 
 /**
