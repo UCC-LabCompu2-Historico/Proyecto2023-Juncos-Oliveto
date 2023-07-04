@@ -69,7 +69,7 @@ let limiteChckbox = () => {           //Si no usamos return nos sigue permitiend
 
     for (cont = 0; cont < chckbox.length; cont++) {
 
-        if (chckbox[cont].checked === true) {
+        if (chckbox[cont].checked) {
             tildes = tildes + 1;
         }
 

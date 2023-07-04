@@ -22,7 +22,7 @@ const calcularCalorias = () => {
         document.getElementById("peso").value='';
     } else {
         resultado= Math.round((resultado) * 100) / 100;
-        document.getElementById("resultadocalculadora").innerHTML = "Calorias para mantenimiento: " + resultado;
+        document.getElementById("resultadocalculadora").textContent = "Calorias para mantenimiento: " + resultado;
         document.getElementById("resultadocalculadora").style.display = "block";
     }
 }

@@ -32775,7 +32775,6 @@ let pintarHombros = () => {
 
     let animation;    //variable en la que almacenaremos nuestra animacion (setInterval)
 
-
     function validaCheckbox() {
 
         let checked = checkbox.checked;
@@ -32793,7 +32792,6 @@ let pintarHombros = () => {
                 // #path390
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${transparencia})`;     //el color con su transparencia variable
-                ctx.strokeStyle = `rgba(46, 203, 170, ${transparencia})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(86.795926, 150.103900);
                 ctx.bezierCurveTo(86.795926, 148.139690, 93.947849, 130.620960, 96.282608, 126.866140);
@@ -32809,7 +32807,6 @@ let pintarHombros = () => {
                 // #path467
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${transparencia})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${transparencia})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(266.580430, 148.887890);
                 ctx.bezierCurveTo(263.507690, 148.039080, 259.601880, 146.603990, 257.900840, 145.698800);
@@ -32897,7 +32894,6 @@ let pintarBiceps = () => {
                 // #path469
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${transparencia})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${transparencia})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(69.517590, 205.019570);
                 ctx.bezierCurveTo(66.934812, 202.613340, 66.710980, 201.538980, 67.257212, 194.170080);
@@ -32914,7 +32910,6 @@ let pintarBiceps = () => {
                 // #path471
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${transparencia})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${transparencia})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(278.964750, 204.716550);
                 ctx.bezierCurveTo(274.368850, 201.551200, 254.846950, 180.800200, 251.212270, 175.216770);
@@ -32997,7 +32992,6 @@ let pintarAbdominales = () => {
                 // #path473
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${transparencia})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${transparencia})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(174.983430, 286.416040);
                 ctx.bezierCurveTo(169.456870, 281.423130, 162.357680, 268.612050, 159.353730, 258.210940);
@@ -33194,7 +33188,6 @@ let pintarCuadriceps = () => {
                 // #path544
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${transparencia})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${transparencia})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(139.899550, 423.750110);
                 ctx.bezierCurveTo(138.888550, 422.556670, 137.364450, 419.141090, 136.512640, 416.159920);
@@ -33217,7 +33210,6 @@ let pintarCuadriceps = () => {
                 // #path546
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${transparencia})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${transparencia})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(211.924530, 423.130140);
                 ctx.bezierCurveTo(206.314180, 417.294140, 201.722570, 401.586880, 199.978930, 382.265910);
@@ -33316,7 +33308,6 @@ let pintarTriceps = () => {
 // #path550
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${opacidad})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${opacidad})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(72.743317, 204.397910);
                 ctx.bezierCurveTo(72.502745, 203.913960, 72.078548, 201.771710, 71.801038, 199.637340);
@@ -33338,7 +33329,6 @@ let pintarTriceps = () => {
 // #path552
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${opacidad})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${opacidad})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(282.087960, 202.777410);
                 ctx.bezierCurveTo(274.751040, 198.100910, 270.317650, 193.294210, 259.486260, 178.272520);
@@ -33440,7 +33430,6 @@ let pintarEspalda = () => {
 // #path471
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${opacidad})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${opacidad})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(125.884180, 263.270440);
                 ctx.bezierCurveTo(127.443000, 255.722080, 128.746850, 242.494730, 127.989680, 241.910690);
@@ -33470,7 +33459,6 @@ let pintarEspalda = () => {
 // #path473
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${opacidad})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${opacidad})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(230.692250, 261.696670);
                 ctx.bezierCurveTo(228.283240, 260.025490, 223.475440, 257.350040, 220.008250, 255.751230);
@@ -33585,7 +33573,6 @@ let pintarGluteos = () => {
 // #path554
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${opacidad})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${opacidad})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(151.328900, 319.505760);
                 ctx.bezierCurveTo(139.315340, 317.672460, 131.073590, 311.052110, 129.678660, 302.114740);
@@ -33602,7 +33589,6 @@ let pintarGluteos = () => {
 // #path1442
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${opacidad})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${opacidad})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(190.475890, 319.493290);
                 ctx.bezierCurveTo(187.203310, 318.424360, 185.026890, 316.455240, 183.692160, 313.355630);
@@ -33688,7 +33674,6 @@ let pintarIsquios = () => {
 // #path1565
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${opacidad})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${opacidad})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(143.270230, 427.794280);
                 ctx.bezierCurveTo(141.124290, 425.965340, 140.500120, 423.883620, 139.532510, 415.328550);
@@ -33726,7 +33711,6 @@ let pintarIsquios = () => {
 // #path1567
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${opacidad})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${opacidad})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(212.456420, 427.923580);
                 ctx.bezierCurveTo(209.048950, 425.295290, 206.261090, 418.643360, 203.971410, 407.678270);
@@ -33880,7 +33864,6 @@ let pintarPantorrillas = () => {
 // #path2364
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${opacidad})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${opacidad})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(133.713790, 507.648820);
                 ctx.bezierCurveTo(131.835000, 506.047500, 131.058880, 504.075500, 129.977100, 498.154390);
@@ -33910,7 +33893,6 @@ let pintarPantorrillas = () => {
 // #path2366
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(255, 255, 255, ${opacidad})`;
-                ctx.strokeStyle = `rgba(46, 203, 170, ${opacidad})`;
                 ctx.lineWidth = 1.239940;
                 ctx.moveTo(221.918060, 507.234230);
                 ctx.bezierCurveTo(219.397920, 505.290340, 215.163020, 498.518840, 215.163020, 496.433120);
