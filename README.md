@@ -8,7 +8,7 @@
 - **Oliveto** , Sofia
 
 ## Link GHpages
-[Link Entrenando(me)](https://ucc-labcompu2.github.io/Proyecto2023-Juncos-Oliveto/)
+[Link Entrenando(me)](https://ucc-labcompu2-historico.github.io/Proyecto2023-Juncos-Oliveto/)
 
 ## Contenido de la página
 El objetivo principal de la página es crear una rutina personalizada de ejercicios en base a la edad, nivel de conocimiento y  objetivos específicos del usuario. No solo que la rutina es personalizada en cuanto a los datos del usuario, sino que también la página permite seleccionar los músculos que se quiere entrenar, creando una rutina de cuatro ejercicios. Además tiene una funcion secundaria que es la de calcular las kcal necesarias para la dieta del usuario con los datos proporcionados por este, tales como edad, peso, altura, sexo y nivel de actividad diaria 
